@@ -12,9 +12,10 @@ export class DashboardService {
     };
   }
 
-  findAll() {
+  findAll(createDashboardDto: CreateDashboardDto) {
     return {
-      email : 'test@mea.or.th',
+      email : createDashboardDto.email,
+      password: createDashboardDto.password,
       status : 'success'
     };
   }

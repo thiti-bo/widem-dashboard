@@ -15,8 +15,8 @@ export class DashboardController {
   }
 
   @Get()
-  findAll() {
-    return this.dashboardService.findAll();
+  findAll(@Body() createDashboardDto: CreateDashboardDto) {
+    return this.dashboardService.findAll(createDashboardDto);
   }
 
   @Get(':id')

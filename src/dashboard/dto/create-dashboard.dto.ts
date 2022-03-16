@@ -7,4 +7,6 @@ export class CreateDashboardDto {
 
   @IsNotEmpty()
   password: string;
+
+  value:string;
 }
